@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <atring.h>
+#include <string.h>
 #include <stddef.h>
 
 /**

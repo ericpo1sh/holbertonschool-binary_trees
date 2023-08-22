@@ -4,16 +4,16 @@
 /**
  * binary_tree_is_perfect - checks if a binary tree is perfect
  * @tree: root node
- * Return: 0 if not perfect, 1 if perfect, NULL if fail
+ * Return: 0 if not perfect, 1 if perfect
  */
 
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	int left = 0;
-	int right = 0;
+	size_t left = 0;
+	size_t right = 0;
 
 	if (!tree)
-		return (NULL);
+		return (0);
 
 	left = binary_tree_is_perfect(tree->left);
 	right = binary_tree_is_perfect(tree->right);

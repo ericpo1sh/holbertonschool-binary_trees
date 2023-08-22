@@ -3,7 +3,7 @@
 
 /**
  * binary_tree_balance - Checks balance between left and right sides of root
- * @tree- root pointer
+ * @tree: root pointer
  * Return: 0 if fail, Balance if success
  */
 
@@ -16,8 +16,8 @@ int binary_tree_balance(const binary_tree_t *tree)
 	if (!tree)
 		return (0);
 
-	left = binary_tree_balance(tree->left);
-	right = binary_tree_balance(tree->right);
+	left = binary_tree_height(tree->left);
+	right = binary_tree_height(tree->right);
 
 	balance = left - right;
 
